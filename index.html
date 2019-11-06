@@ -8,8 +8,14 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-  gtag('config', 'UA-151633440-1');
-</script>
+    gtag('config', 'UA-151633440-1');
+
+    const buttonClick = function(category) {
+      gtag('event', 'click', {
+        'event_category': category,
+      })
+    }
+  </script>
 </head>
 <body class="container">
   <div class="overlay">
@@ -24,8 +30,10 @@
         <h2>The coffee app</h2>
       </div>
       <div class="store-wrapper">
-        <img src="img/appstore.png" class="app-store" />
-        <img src="img/googleplay.png" class="google-store" />
+        <a href="https://testflight.apple.com/join/uEeyu9Un">
+          <img onClick="buttonClick('appstore')" src="img/appstore.png" class="app-store" />
+        </a>
+        <img onClick="buttonClick('playstore')" src="img/googleplay.png" class="google-store" />
       </div>
     </div>
   </div>
