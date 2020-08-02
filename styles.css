@@ -1,3 +1,13 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  transition: all 0.2s ease-out;
+  color: rgba(0, 0, 0, 0.42)
+}
+
 body {
   font-family: Muli;
 }
@@ -146,4 +156,30 @@ li:last-child:after {
     height: 59px;
     padding: 15px 0;
   }
+}
+
+/* blog */
+
+.blog {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FFFEF5;
+  padding: 20px;
+}
+
+.blog-article {
+  margin-top: 40px;
+}
+
+.blog-paragraph {
+  max-width: 800px;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.blog-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 3px;
 }
