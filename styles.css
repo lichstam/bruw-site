@@ -178,8 +178,21 @@ li:last-child:after {
   white-space: pre-line;
 }
 
+.blog-side-by-side {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 18px;
+}
+
 .blog-logo {
   width: 60px;
   height: 60px;
   border-radius: 3px;
+}
+
+.blog-medium-promo-image {
+  width: 220px;
+  align-self: center;
+  border: 1px solid black;
 }
